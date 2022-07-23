@@ -1,0 +1,1807 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:25:39.552Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3491000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "guest user could register with valid data successfully",
+        "description": "",
+        "id": "f01-register-|-users-could-register-with-new-accounts;guest-user-could-register-with-valid-data-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2834000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goto register page",
+            "match": {
+              "location": "org.example.stepDefs.D01_registerStepDef.goToRegisterPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2088000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user select a gender type",
+            "match": {
+              "location": "org.example.stepDefs.D01_registerStepDef.selectAGender()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter first name \"automation\" and last name \"tester\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"automation\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"tester\"",
+                  "offset": 49
+                }
+              ],
+              "location": "org.example.stepDefs.D01_registerStepDef.userEnterFirstNameAndLastNameField(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6340000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enter the date of birth",
+            "match": {
+              "location": "org.example.stepDefs.D01_registerStepDef.enterBirth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter email \"test28@example.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test28@example.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "org.example.stepDefs.D01_registerStepDef.userEnterEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user fills Password fields \"P@ssw0rd\" \"P@ssw0rd\" fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"P@ssw0rd\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"P@ssw0rd\"",
+                  "offset": 38
+                }
+              ],
+              "location": "org.example.stepDefs.D01_registerStepDef.userFillsPasswordFieldsFields(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1499000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the register button",
+            "match": {
+              "location": "org.example.stepDefs.D01_registerStepDef.registerBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify success message is displayed",
+            "match": {
+              "location": "org.example.stepDefs.D01_registerStepDef.verifymessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "F01_Register | users could register with new accounts",
+    "description": "",
+    "id": "f01-register-|-users-could-register-with-new-accounts",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F01_Register.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:26:06.406Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3230000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user could login with valid email and password",
+        "description": "",
+        "id": "f02-login-|-users-could-use-login-functionality-to-use-their-accounts;user-could-login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 10079000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2756000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user go to login page test",
+            "match": {
+              "location": "org.example.stepDefs.D02_loginStepDef.goLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login with \"valid\" \"test28@example.com\" and \"P@ssw0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"valid\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"test28@example.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"P@ssw0rd\"",
+                  "offset": 49
+                }
+              ],
+              "location": "org.example.stepDefs.D02_loginStepDef.userLogin(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1302000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user press on login button",
+            "match": {
+              "location": "org.example.stepDefs.D02_loginStepDef.loginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user login to the system successfully",
+            "match": {
+              "location": "org.example.stepDefs.D02_loginStepDef.verifySuccessLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:26:24.050Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3195000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "user could login with invalid email and password",
+        "description": "",
+        "id": "f02-login-|-users-could-use-login-functionality-to-use-their-accounts;user-could-login-with-invalid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 10073000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2768000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user go to login page test",
+            "match": {
+              "location": "org.example.stepDefs.D02_loginStepDef.goLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with \"invalid\" \"test@example.com\" and \"P@ssw0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"test@example.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"P@ssw0rd\"",
+                  "offset": 49
+                }
+              ],
+              "location": "org.example.stepDefs.D02_loginStepDef.userLogin(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1822000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user press on login button",
+            "match": {
+              "location": "org.example.stepDefs.D02_loginStepDef.loginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user could not login to the system",
+            "match": {
+              "location": "org.example.stepDefs.D02_loginStepDef.verifyFaildLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "F02_Login | users could use login functionality to use their accounts",
+    "description": "",
+    "id": "f02-login-|-users-could-use-login-functionality-to-use-their-accounts",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F02_Login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:26:42.168Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1839000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Logged User could switch between currencies US-Euro",
+        "description": "",
+        "id": "f03-currencies-|-user-could-switch-between-currencies-us-euro;logged-user-could-switch-between-currencies-us-euro",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3173000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user select currency type",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.selectCurrency()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can show the changed currency",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.verifySwitchCurrency()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user showed the Euro Symbol (€) is shown on the four products displayed in Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.verifyCurrencyPrice()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "F03_Currencies | User could switch between currencies US-Euro",
+    "description": "",
+    "id": "f03-currencies-|-user-could-switch-between-currencies-us-euro",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F03_currencies.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:26:57.563Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1899000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "user could search using product name",
+        "description": "",
+        "id": "search-|--user-could-search-for-any-product;user-could-search-using-product-name;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2086000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on search field1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.goSearchPage1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter product name \"book\" search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"book\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.example.stepDefs.D04_searchStepDef.userEnterProductNameSearch(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 743000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on enter to show search result1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.enterSearch1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user can show the search result1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.showResult1()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:27:12.622Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2170000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "user could search using product name",
+        "description": "",
+        "id": "search-|--user-could-search-for-any-product;user-could-search-using-product-name;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 10073000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2086000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on search field1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.goSearchPage1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter product name \"laptop\" search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptop\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.example.stepDefs.D04_searchStepDef.userEnterProductNameSearch(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on enter to show search result1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.enterSearch1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user can show the search result1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.showResult1()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:27:27.816Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1895000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "user could search using product name",
+        "description": "",
+        "id": "search-|--user-could-search-for-any-product;user-could-search-using-product-name;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2089000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on search field1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.goSearchPage1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter product name \"nike\" search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nike\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.example.stepDefs.D04_searchStepDef.userEnterProductNameSearch(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 749000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on enter to show search result1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.enterSearch1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user can show the search result1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.showResult1()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:27:42.857Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1841000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "user could search for product using sku",
+        "description": "",
+        "id": "search-|--user-could-search-for-any-product;user-could-search-for-product-using-sku;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10073000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2088000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on search field1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.goSearchPage1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9739000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter product sku \"SCI_FAITH\"search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SCI_FAITH\"",
+                  "offset": 23
+                }
+              ],
+              "location": "org.example.stepDefs.D04_searchStepDef.userEnterProductSkuSearch(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user can show the PDP for enter sku",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.showPDP()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:28:06.727Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2035000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "user could search for product using sku",
+        "description": "",
+        "id": "search-|--user-could-search-for-any-product;user-could-search-for-product-using-sku;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2086000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on search field1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.goSearchPage1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8684000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter product sku \"APPLE_CAM\"search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APPLE_CAM\"",
+                  "offset": 23
+                }
+              ],
+              "location": "org.example.stepDefs.D04_searchStepDef.userEnterProductSkuSearch(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user can show the PDP for enter sku",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.showPDP()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:28:29.724Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "user could search for product using sku",
+        "description": "",
+        "id": "search-|--user-could-search-for-any-product;user-could-search-for-product-using-sku;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2084000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on search field1",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.goSearchPage1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9220000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter product sku \"SF_PRO_11\"search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SF_PRO_11\"",
+                  "offset": 23
+                }
+              ],
+              "location": "org.example.stepDefs.D04_searchStepDef.userEnterProductSkuSearch(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user can show the PDP for enter sku",
+            "match": {
+              "location": "org.example.stepDefs.D04_searchStepDef.showPDP()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Search |  User could search for any product",
+    "description": "",
+    "id": "search-|--user-could-search-for-any-product",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F04_Search.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:28:53.325Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1859000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "first slider is clickable on home page",
+        "description": "",
+        "id": "f06-homesliders-|-check-sliders-is-clickable-on-home-page;first-slider-is-clickable-on-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 10071000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 742000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on First Slider",
+            "match": {
+              "location": "org.example.stepDefs.D06_homeSlidersStepDef.firstClick()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:629)\n\tat org.testng.Assert.assertEquals(Assert.java:639)\n\tat org.example.stepDefs.D06_homeSlidersStepDef.verify1stSlider(D06_homeSlidersStepDef.java:27)\n\tat ✽.user redirect to url1 Nokia(file:///home/nada/IdeaProjects/DemoProjectAutomation2/src/main/resources/features/F06_homeSliders.feature:6)\n",
+              "duration": 7000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user redirect to url1 Nokia",
+            "match": {
+              "location": "org.example.stepDefs.D06_homeSlidersStepDef.verify1stSlider()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:29:06.058Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1915000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "second slider is clickable on home page",
+        "description": "",
+        "id": "f06-homesliders-|-check-sliders-is-clickable-on-home-page;second-slider-is-clickable-on-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 10071000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify user go to Home page",
+            "match": {
+              "location": "org.example.stepDefs.D03_currenciesStepDef.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 768000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on Second Slider",
+            "match": {
+              "location": "org.example.stepDefs.D06_homeSlidersStepDef.secondClick()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:629)\n\tat org.testng.Assert.assertEquals(Assert.java:639)\n\tat org.example.stepDefs.D06_homeSlidersStepDef.verify2ndSlider(D06_homeSlidersStepDef.java:34)\n\tat ✽.user redirect to url2 iphone(file:///home/nada/IdeaProjects/DemoProjectAutomation2/src/main/resources/features/F06_homeSliders.feature:10)\n",
+              "duration": 5000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user redirect to url2 iphone",
+            "match": {
+              "location": "org.example.stepDefs.D06_homeSlidersStepDef.verify2ndSlider()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "F06_homeSliders | check sliders is clickable on home page",
+    "description": "",
+    "id": "f06-homesliders-|-check-sliders-is-clickable-on-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F06_homeSliders.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:29:18.857Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1839000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user opens facebook link",
+        "description": "",
+        "id": "f07-followus-|-users-could-open-followus-links;user-opens-facebook-link",
+        "after": [
+          {
+            "result": {
+              "duration": 10076000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 240000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user in home page and follow us links appeared",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.verifyHomeFollowUsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on facebook link",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.clickOnFacebook()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5028000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"https://www.facebook.com/nopCommerce\" is opened in new tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.facebook.com/nopCommerce\"",
+                  "offset": 0
+                }
+              ],
+              "location": "org.example.stepDefs.D07_followUsStepDef.isOpenedInNewTab(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:29:36.126Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1838000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "user opens twitter link",
+        "description": "",
+        "id": "f07-followus-|-users-could-open-followus-links;user-opens-twitter-link",
+        "after": [
+          {
+            "result": {
+              "duration": 10095000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 200000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user in home page and follow us links appeared",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.verifyHomeFollowUsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10076000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on twitter link",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.clickOnTwitter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5021000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"https://twitter.com/nopCommerce\" is opened in new tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://twitter.com/nopCommerce\"",
+                  "offset": 0
+                }
+              ],
+              "location": "org.example.stepDefs.D07_followUsStepDef.isOpenedInNewTab(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:30:03.364Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1798000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "user opens rss link",
+        "description": "",
+        "id": "f07-followus-|-users-could-open-followus-links;user-opens-rss-link",
+        "after": [
+          {
+            "result": {
+              "duration": 10071000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user in home page and follow us links appeared",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.verifyHomeFollowUsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 614000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user click on rss link",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.clickOnRss()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 1\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\n\tat java.util.ArrayList.get(ArrayList.java:435)\n\tat org.example.stepDefs.D07_followUsStepDef.isOpenedInNewTab(D07_followUsStepDef.java:78)\n\tat ✽.\"https://demo.nopcommerce.com/new-online-store-is-open\" is opened in new tab(file:///home/nada/IdeaProjects/DemoProjectAutomation2/src/main/resources/features/F07_followUs.feature:22)\n",
+              "duration": 5006000000,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "\"https://demo.nopcommerce.com/new-online-store-is-open\" is opened in new tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://demo.nopcommerce.com/new-online-store-is-open\"",
+                  "offset": 0
+                }
+              ],
+              "location": "org.example.stepDefs.D07_followUsStepDef.isOpenedInNewTab(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:30:21.048Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1848000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "user opens youtube link",
+        "description": "",
+        "id": "f07-followus-|-users-could-open-followus-links;user-opens-youtube-link",
+        "after": [
+          {
+            "result": {
+              "duration": 10089000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user in home page and follow us links appeared",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.verifyHomeFollowUsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user click on youtube link",
+            "match": {
+              "location": "org.example.stepDefs.D07_followUsStepDef.clickOnYoutube()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5026000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "\"https://www.youtube.com/user/nopCommerce\" is opened in new tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.youtube.com/user/nopCommerce\"",
+                  "offset": 0
+                }
+              ],
+              "location": "org.example.stepDefs.D07_followUsStepDef.isOpenedInNewTab(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "F07_followUs | users could open followUs links",
+    "description": "",
+    "id": "f07-followus-|-users-could-open-followus-links",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F07_followUs.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T23:30:38.286Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2038000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "verify that the user can add item to wishlist successfully",
+        "description": "",
+        "id": "f08-wishlist-|-user-can-add-item-to-his-wishlist;verify-that-the-user-can-add-item-to-wishlist-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 10071000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in Home page and there are product list",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.homewish()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on heart for item",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.clickWishlist()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2155000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user show success message The product has been added to your wishlist with green background color",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.userWillSeeSuccessMessageTheProductHasBeenAddedToYourWishlistWithGreenBackgroundColor()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-22T23:30:52.674Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1835000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "verify that count of the wishlist responding",
+        "description": "",
+        "id": "f08-wishlist-|-user-can-add-item-to-his-wishlist;verify-that-count-of-the-wishlist-responding",
+        "after": [
+          {
+            "result": {
+              "duration": 10072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.example.stepDefs.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user in Home page and there are product list",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.homewish()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on heart for item",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.clickWishlist()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25860000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "wait until this success message with green color to disappear then click on Wishlist Tab",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.waitUntilThisSuccessMessageWithGreenColorToDisappearThenClickOnWishlistTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "get Qty value and verify it\u0027s bigger than zero",
+            "match": {
+              "location": "org.example.stepDefs.D08_WishlistStepDef.getQtyValueAndVerifyItSBiggerThanZero()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "F08_Wishlist | user can add item to his wishlist",
+    "description": "",
+    "id": "f08-wishlist-|-user-can-add-item-to-his-wishlist",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/F08_wishlist.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
