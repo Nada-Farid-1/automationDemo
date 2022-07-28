@@ -1,11 +1,11 @@
 @smoke
-Feature: Search |  User could search for any product
+Feature: F04_Search |  User could search for any product
   Scenario Outline: user could search using product name
     Given verify user go to Home page
-    When user click on search field1
-    And user enter product name "<productname>" search
-    And user click on enter to show search result1
-    Then user can show the search result1
+    When user click on search field
+    And user enter product name "<productname>" in search field
+    And user click on enter to show search result
+    Then user can show the search result
     Examples:
       | productname |
       | book |
@@ -15,9 +15,9 @@ Feature: Search |  User could search for any product
 
   Scenario Outline: user could search for product using sku
     Given verify user go to Home page
-    When user click on search field1
-   And user enter product sku "<sku>"search
-    Then user can show the PDP for enter sku
+    When user click on search field
+   And user enter product sku "<sku>" in search field
+    Then user can show the PDP for entered sku
     Examples:
       | sku |
       | SCI_FAITH |

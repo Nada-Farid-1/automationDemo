@@ -8,45 +8,39 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-import java.util.Locale;
 
 public class D04_searchStepDef {
     P03_homePage testsearch = new P03_homePage();
     SoftAssert softAssert = new SoftAssert();
     String subtitlesearch;
-    @When("user click on search field1")
+    @When("user click on search field")
     public void goSearchPage1() throws InterruptedException {
         Thread.sleep(2000);
         testsearch.searchField().click();
     }
     String keyword;
-    @And("user enter product name {string} search")
+    @And("user enter product name {string} in search field")
     public void userEnterProductNameSearch(String arg0) {
         testsearch.searchField().sendKeys(arg0);
         keyword = arg0;
     }
+    @And("user click on enter to show search result")
+    public void enterSearch1()
+    {
+        testsearch.searchField().sendKeys(Keys.ENTER);
+    }
 
-    @And("user enter product sku {string}search")
+    @And("user enter product sku {string} in search field")
     public void userEnterProductSkuSearch(String arg0) throws InterruptedException {
         testsearch.searchField().sendKeys(arg0);
         Thread.sleep(5000);
-        subtitlesearch =testsearch.searchresultonfield().getText();
-        subtitlesearch=subtitlesearch.replace('&',' ').trim();
-        subtitlesearch=subtitlesearch.replace('(',' ').trim();
-        subtitlesearch=subtitlesearch.replace(')',' ').trim();
-        subtitlesearch=subtitlesearch.replaceAll("\\s+"," ").trim();
-        subtitlesearch=subtitlesearch.replace(' ','-').toLowerCase(Locale.ROOT);
         testsearch.searchresultonfield().click();
         Thread.sleep(2000);
         keyword=arg0;
     }
 
-    @And("user click on enter to show search result1")
-    public void enterSearch1()
-    {
-        testsearch.searchField().sendKeys(Keys.ENTER);
-    }
-    @Then("user can show the search result1")
+
+    @Then("user can show the search result")
     public void showResult1()
     {
        String actualSearchName = testsearch.redirectGetCurrenturl();
@@ -58,7 +52,7 @@ public class D04_searchStepDef {
         }
         softAssert.assertAll();
     }
-    @Then("user can show the PDP for enter sku")
+    @Then("user can show the PDP for entered sku")
     public void showPDP()
     {
         String actualskuValue= testsearch.skuPDP().getText();

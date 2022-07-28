@@ -1,4 +1,4 @@
-@Smoke
+@smoke
 Feature: F05_hoverCategories | user could select different Categories
   Scenario: Logged user could select different Categories
   Given user in Home Page and there are 3 main categories contains sub-categories
